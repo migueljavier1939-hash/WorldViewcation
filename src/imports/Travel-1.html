@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>World Viewcation Travel and Tours</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">
+        <img src="Logo2.jpeg" alt="World Viewcation Travel & Tours Logo">
+        <span>World Viewcation Travel & Tours</span>
+      </a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#destinations">Destinations</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#book">Book a Trip</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <a href="#book" class="btn-primary">Where would you like to go?</a>
+    </div>
+  </section>
+
+  <section class="why-us">
+    <div class="why-card">
+      <h3>Verified Endorsements</h3>
+      <p>Every listed spot is reviewed and endorsed by real travelers before it makes the cut.</p>
+    </div>
+    <div class="why-card">
+      <h3>Simple Booking</h3>
+      <p>Pick a destination, choose your dates, and book in minutes — no hidden fees.</p>
+    </div>
+    <div class="why-card">
+      <h3>24/7 Support</h3>
+      <p>Our team is on call around the clock for anything you need before or during your trip.</p>
+    </div>
+  </section>
+
+  <section id="destinations" class="destinations">
+    <h2>Featured Destinations</h2>
+    <p class="section-sub">Places our travelers vouch for</p>
+
+    <div class="destination-grid">
+      <div class="destination-card">
+        <div class="badge">Editor's Pick</div>
+        <img src="https://placehold.co/400x280?text=Palawan" alt="Palawan">
+        <div class="destination-info">
+          <h3>Palawan, Philippines</h3>
+          <p>Crystal lagoons and limestone cliffs. Endorsed by 240+ travelers.</p>
+          <a href="#book" class="btn-secondary">Book Now</a>
+        </div>
+      </div>
+
+      <div class="destination-card">
+        <div class="badge">Trending</div>
+        <img src="https://placehold.co/400x280?text=Kyoto" alt="Kyoto">
+        <div class="destination-info">
+          <h3>Kyoto, Japan</h3>
+          <p>Temples, gardens, and quiet streets. Endorsed by 180+ travelers.</p>
+          <a href="#book" class="btn-secondary">Book Now</a>
+        </div>
+      </div>
+
+      <div class="destination-card">
+        <div class="badge">Editor's Pick</div>
+        <img src="https://placehold.co/400x280?text=Santorini" alt="Santorini">
+        <div class="destination-info">
+          <h3>Santorini, Greece</h3>
+          <p>Whitewashed cliffs and sunset views. Endorsed by 310+ travelers.</p>
+          <a href="#book" class="btn-secondary">Book Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="services">
+    <h2>What We Offer</h2>
+    <div class="service-grid">
+      <div class="service-item">
+        <h3>Tour Packages</h3>
+        <p>Curated itineraries for solo travelers, couples, families, and groups.</p>
+      </div>
+      <div class="service-item">
+        <h3>Hotel Booking</h3>
+        <p>Reserve accommodations that match your budget and style.</p>
+      </div>
+      <div class="service-item">
+        <h3>Local Guides</h3>
+        <p>Connect with trusted local guides who know the destination best.</p>
+      </div>
+      <div class="service-item">
+        <h3>Transport Arrangement</h3>
+        <p>Airport transfers and in-destination transport, sorted for you.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="book" class="booking">
+    <h2>Book a Trip</h2>
+    <form class="booking-form">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" placeholder="Juan Dela Cruz" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="you@example.com" required>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="destination">Destination</label>
+          <select id="destination">
+            <option>Palawan, Philippines</option>
+            <option>Kyoto, Japan</option>
+            <option>Santorini, Greece</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="guests">Guests</label>
+          <input type="number" id="guests" min="1" value="1">
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="departure">Departure Date</label>
+          <input type="date" id="departure">
+        </div>
+        <div class="form-group">
+          <label for="return">Return Date</label>
+          <input type="date" id="return">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="notes">Notes (optional)</label>
+        <textarea id="notes" rows="3" placeholder="Any special requests?"></textarea>
+      </div>
+
+      <button type="submit" class="btn-primary">Submit Booking Request</button>
+    </form>
+  </section>
+
+  <footer id="contact" class="footer">
+    <div class="footer-container">
+      <div>
+        <h3>Wanderly<span>.</span></h3>
+        <p>Endorsed places, honest trips, easy booking.</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>support@wanderlytravels.com</p>
+        <p>+63 900 000 0000</p>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <p>Facebook · Instagram · TikTok</p>
+      </div>
+    </div>
+    <p class="copyright">&copy; 2026 Wanderly Travels. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
