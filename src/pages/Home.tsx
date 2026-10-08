@@ -62,7 +62,7 @@ function Hero() {
             className="animated-gradient transition-all duration-300 hover:scale-105 hover:drop-shadow-lg cursor-pointer"
             style={{ background: "linear-gradient(90deg, #FEFEFE, #0092CE, #FEFEFE)", backgroundSize: "200% auto", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text", fontFamily: "'Style Script', cursive", fontStyle: "italic", fontSize: "clamp(1.8rem, 4vw, 3rem)", fontWeight: "bold", display: "inline-block" }}
           >
-            Where Would You Like to Go?
+            Where Would You Like to Go? '
           </button>
         </div>
         <h2 className="hero-text-3 text-blue-100 text-2xl md:text-2xl mb-10 max-w-2xl mx-auto font-light leading-relaxed">
