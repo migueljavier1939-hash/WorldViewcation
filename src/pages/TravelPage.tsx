@@ -109,7 +109,7 @@ function CategorySlideshow({ photos }: { photos: { src: string; caption: string 
   }
 
   return (
-    <div className="relative rounded-2xl overflow-hidden mt-6 shadow-xl" style={{ height: "340px", background: "#023785" }}>
+    <div className="relative rounded-2xl overflow-hidden mt-6 shadow-xl" style={{ height: "600px", background: "#023785" }}>
       <img key={current} src={photos[current].src} alt={photos[current].caption} className="w-full h-full object-cover"
         style={{ animation: sliding ? `${animDir === "right" ? "slideshow-out-left" : "slideshow-out-right"} 0.35s ease forwards` : "slideshow-in 0.35s ease forwards" }} />
       <div className="absolute bottom-0 left-0 right-0 px-5 py-4" style={{ background: "linear-gradient(to top, rgba(2,55,133,0.85) 0%, transparent 100%)" }}>
