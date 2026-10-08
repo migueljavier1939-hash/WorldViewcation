@@ -16,7 +16,7 @@ export default function ContactPage() {
           <div className="grid md:grid-cols-3 gap-4 mb-16">
             {[
               { icon: "📧", label: "Email", value: "support@worldviewcationtravelandtours.com inquiry@worldviewcationtravelandtours.com partners@worldviewcationtravelandtours.com" },
-              { icon: "📞", label: "Phone", value: "+63 908 417 5922" },
+              { icon: "📞", label: "Phone", value: "0915 811 4801" },
               { icon: "📍", label: "Location", value: "1047B Bagumbayan, Mendiola Street, Siniloan Laguna, 4019 Philippines." },
             ].map((c) => (
               <Reveal key={c.label}>
