@@ -18,7 +18,7 @@ import galleryBirdParadise2 from "@/imports/gallery_bird_paradise2.jpeg"
 
 const GALLERY_PHOTOS = [
   { src: sg1,                 alt: "Singapore",               span: "row-span-2" },
-  { src: sg2,                 alt: "Sri Lanka",               span: "" },
+  { src: sg2,                 alt: "Singapore",               span: "" },
   { src: sg3,                 alt: "Singapore",               span: "row-span-2" },
   { src: cebu4,               alt: "Cebu, Philippines",       span: "" },
   { src: cebu5,               alt: "Cebu, Philippines",       span: "" },
@@ -27,7 +27,7 @@ const GALLERY_PHOTOS = [
   { src: cebu10,              alt: "Cebu, Philippines",       span: "" },
   { src: cebu11,              alt: "Cebu, Philippines",       span: "row-span-2" },
   { src: indo1,               alt: "Indonesia",               span: "" },
-  { src: galleryAdd1,         alt: "Singapore",               span: "" },
+  { src: galleryAdd1,         alt: "Sri Lanka",               span: "" },
   { src: gallerySgZoo,        alt: "Singapore Zoo",           span: "" },
   { src: galleryRiverWonders, alt: "River Wonders, Singapore", span: "row-span-2" },
   { src: galleryBirdParadise1,alt: "Bird Paradise, Singapore", span: "" },
