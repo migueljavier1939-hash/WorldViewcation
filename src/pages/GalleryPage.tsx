@@ -18,7 +18,7 @@ import galleryBirdParadise2 from "@/imports/gallery_bird_paradise2.jpeg"
 
 const GALLERY_PHOTOS = [
   { src: sg1,                 alt: "Singapore",               span: "row-span-2" },
-  { src: sg2,                 alt: "Singapore",               span: "" },
+  { src: sg2,                 alt: "Sri Lanka",               span: "" },
   { src: sg3,                 alt: "Singapore",               span: "row-span-2" },
   { src: cebu4,               alt: "Cebu, Philippines",       span: "" },
   { src: cebu5,               alt: "Cebu, Philippines",       span: "" },
