@@ -14,6 +14,7 @@ export default function GalleryPage() {
   const [photos, setPhotos] = useState<Photo[] | null>(null)
   const [failed, setFailed] = useState(false)
   const [lightbox, setLightbox] = useState<{ src: string; alt: string } | null>(null)
+  const [portraits, setPortraits] = useState<Record<number, boolean>>({})
 
   useEffect(() => {
     let cancelled = false
@@ -47,7 +48,10 @@ export default function GalleryPage() {
 
   const loading = photos === null && !failed
   // Portrait photos take two rows, like the original hand-tuned layout
-  const spanFor = (p: Photo) => (p.width && p.height && p.height / p.width > 1.15 ? "row-span-2" : "")
+  const spanFor = (p: Photo) => {
+    const isPortrait = p.width && p.height ? p.height / p.width > 1.15 : portraits[p.id]
+    return isPortrait ? "row-span-2" : ""
+  }
 
   return (
     <div className="pt-20">
@@ -122,7 +126,11 @@ export default function GalleryPage() {
                     style={{ background: "#023785" }}
                     onClick={() => setLightbox({ src: p.image_url, alt: p.caption })}
                   >
-                    <img src={p.image_url} alt={p.caption} loading="lazy" />
+                    <img src={p.image_url} alt={p.caption} loading="lazy" onLoad={(e) => {
+                      const { naturalWidth: w, naturalHeight: h } = e.currentTarget
+                      if (h / w > 1.15) setPortraits((s) => (s[p.id] ? s : { ...s, [p.id]: true }))
+                    }}
+                    />
                     <div className="gallery-overlay">
                       <span className="text-white text-sm font-medium">{p.caption}</span>
                     </div>
